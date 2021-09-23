@@ -29,6 +29,7 @@ describe('Redash Connector', () => {
     assert.equal(connector.registryFormat(), Schema.CredentialsRegistryDataSchema);
     assert.equal(connector.readContextFormat(), Schema.ReadOnlyWorkflowContextSchema);
     assert.equal(connector.writeContextFormat(), Schema.MutatingWorkflowContextSchema);
+    assert.equal(connector.listContextFormat(), Schema.ListContextSchema);
   });
 
 });
